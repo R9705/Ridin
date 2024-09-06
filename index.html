@@ -15,185 +15,528 @@
     <meta name="author" content="ridin">
 
 
-    <!--font links-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+    <title>js/jq</title>
 
-    <!--css links-->
+
+     <!--css links-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
     <!--icon links-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>school</title>
+
   </head>
 
   <body>
 
-    <section class="conteiner">
+
+    <div class="container">
+      <!--ex1--><hr>
+      <h2 class="text-danger">Click the button on off the bulb</h2>
       
     
 
+<p>JavaScript can change HTML attribute values.</p>
 
-    <div class="row">
-    <div class="col-4">
-    <img src="images/caa.png"><hr><h1>classic</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </div>
-     <div class="col-4">
-    <img src="images/caa.png"><hr><h1>alian force</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </div>
-    <div class="col-4">
-    <img src="images/caa.png"><hr><h1>omniverce
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-    </h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </div>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="bulb" src="images/off.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
 
 
-    <div class="col-4">
-    <img src="images/caa.png"><hr><h1>omniverce
+    
+      <!--ex2--><hr>
+      <h2 class="text-danger">Click the button on off the text</h2>
+      <button type="button" class="btn btn-dark">Textchange</button>
 
-    </h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </div>
-      
+    <h3 id="tc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
 
-      <div class="col-4">
-    <img src="images/caa.png"><hr><h1>omniverce
 
-    </h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </div>
-      
 
-      <div class="col-4">
-    <img src="images/caa.png"><hr><h1>omniverce
 
-    </h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. </div>
-      
-      
-    </div>
+    
+      <!--ex3--><hr>
      
-   </div>
-    <section class="conteiner">
-      <section>
-        <!--accoriding start-->
-        <section class="acco">
-          <div class="conteiner">
-            <div class="accordion" id="accprdion">
-              <div class="accordion-item">
-                <h2 class="accordion-header"></h2>
-
-                <button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Custom button
-</button>
-
-
-<h2><div id="accprdion" class="accprdion-collapse collapse show">
-  <div class="accordion-body a-body">
-    <strong>Accordion #1</strong><br>
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    
-  </div>
-  
-</div></h2>
-                
-              </div>
-              
-            </div>
-            
-          </div>
-          
-        </section>
+      <h2 class="text-danger">Click the button to show the result</h2>
+      <button onclick="">Show Result</button>
+      <h3 id="sr">Result is:</h3>
 
 
 
 
+       <!--ex4--><hr>
+     
+      <h2 class="text-danger">Click the button to show hide the content</h2>
+      <button onclick="" "textShow()">Show</button>
+      <button onclick="" "textHide()">Hide</button>
+      <h3 id="tsh">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
 
-         <!--accoriding start-->
-        <section class="acco">
-          <div class="conteiner">
-            <div class="accordion" id="accprdion">
-              <div class="accordion-item">
-                <h2 class="accordion-header"></h2>
 
-                <button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Custom button
-</button>
+<!--ex5--><hr>
+     
+      <h2 class="text-danger">Click the button to show the result</h2>
+      <button onclick=""show>Show Result</button>
+      <h3 id="sr2">Result is:</h3>
 
+<!--ex6--><hr>
 
-<h2><div id="accprdion" class="accprdion-collapse collapse show">
-  <div class="accordion-body a-body">
-    <strong>Accordion #2</strong><br>
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    
-  </div>
-  
-</div></h2>
-                
-              </div>
-              
-            </div>
-            
-          </div>
+      <h1>JavaScript Object Constructors</h1>
+
+<p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
 
+<!--ex7--><hr>
+<h2 class="text-danger">JavaScript Objects</h2>
+<button onclick="">result</button>
+
+<p>Using an object constructor:</p>
+
+<p id="demo">riddu</p>
+
+<!--ex8--><hr>
+<h2 class="text-danger">JavaScript Functions</h2>
+<button>text</button>
+<p>After a function has been stored in a variable,
+the variable can be used as a function:</p>
+
+<p id="demo"></p>
+
+<!--ex9--><hr>
+<h1 class="text-danger">JavaScript Functions</h1>
+<h2 class="text-danger">The Rest Parameter</h2>
+<button>riddu</button>
+
+<p>The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:</p>
 
 
-           <!--accoriding start-->
-        <section class="acco">
-          <div class="conteiner">
-            <div class="accordion" id="accprdion">
-              <div class="accordion-item">
-                <h2 class="accordion-header"></h2>
 
-                <button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Custom button
-</button>
+<!--ex10--><hr>
+<h2 class="text-danger">JavaScript Functions</h2>
+
+<p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+<p>The fullName property is a method:</p> 
+
+<p id="demo"></p>
 
 
-<h2><div id="accprdion" class="accprdion-collapse collapse show">
-  <div class="accordion-body a-body">
-    <strong>Accordion #3</strong><br>
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    
-  </div>
-  
-</div></h2>
-                
-              </div>
-              
-            </div>
-            
-          </div>
-          
-        </section>
-          
-        </section>
-      </section>
+
+<!--ex11--><hr>
+
+<h2 class="text-danger">JavaScript Functions</h2>
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p id="demo"></p>
+
+
+
+<p id="demo"></p>
+
+
+
+<!--ex12--><hr>
+
+<h2 class="text-danger">JavaScript Functions</h2>
+<p>A function can access variables defined inside the function:</p>
+
+<p id="demo"></p>
+<!--ex13--><hr>
+
+
+<h1 class="text-danger">JavaScript Classes</h1>
+<p>Creating two car objects from a car class:</p>
+
+<p id="demo"></p>
+
+
+<!--ex14--><hr>
+
+<h1 class="text-danger">JavaScript Class Static Methods</h1>
+<p>A static method is created with the "static" keyword, and you can only call the method on the class itself.</p>
+
+<p id="demo"></p>
+
+
+<!--ex15--><hr>
+<h1 class="text-danger">JavaScript Functions</h1>
+<h2 class="text-danger">Function Sequence</h2>
+<p class="text-danger">JavaScript functions are executed in the sequence they are called.</p>
+
+<p id="demo"></p>
+
+
+<!--ex16--><hr>
+<h2 class="text-danger">My First Page</h2>
+
+<p id="demo"></p>
+ <!-- ex1 <--><br>
+        <h2 class="text-danger">Click the button to show the text</h2>
+      <button type="button" onclick="textChange()" class="btn btn-success">Text change</button>
+      <h1 id="ban">I am open san serif</h1>
+
+      <!-- ex2 --> <hr>
+      <h2 class="text-danger">Click the button to show the date</h2>
+      <button type="button" onclick="showDate()" class="btn btn-warning">Show Date</button>
+      <h1 id="sd">..  ...  ... ..  ..  ...</h1>
+
+
+      <!-- ex3 --> <hr>
+      <h2 class="text-danger">Click the button to change the css</h2>
+      <button type="button" onclick="changeCss()" class="btn btn-danger">Color</button>
+      <h1 id="cc">Case Cading Stylesheet <h1>
+
+      <!-- ex4 --> <hr>
+      <h2 class="text-danger">Click the button to show/hide the text</h2>
+      <button type="button" onclick="textShow()" class="btn btn-success">Show Text</button>
+      <button type="button" onclick="textHide()" class="btn btn-dark">Hide Text</button>
+      <h1 id="sh">Let's show or hide the text.<h1>
+
+    <!-- ex5 --> <hr>
+      <h2 class="text-danger">Click the button to change the emoji</h2>
+      <button type="button" onclick="smilePic()" class="btn btn-success">Smile</button>
+      <img id="sp" src="images/smile.jpg" alt="" class="emoji">
+      <button type="button" onclick="sadPic()" class="btn btn-dark">Sad</button>
+
+      <!-- ex6 --> <hr>
+      <h2 class="text-danger">Click the button to change the font-size</h2>
+      <button type="button" onclick="changeFs()" class="btn btn-warning">Click</button>
+      <h1 id="fs">Change the font size.</h1>
+
+      <!-- ex7 --> <hr>
+      <h2 class="text-danger">Click the button to show the number</h2>
+      <button type="button" onclick="showNumber()" class="btn btn-danger">Click</button>
+
+      <!-- ex8 --> <hr>
+      <h2 class="text-danger">Click the button to show the new window</h2>
+      <button type="button" onclick="winShow()" class="btn btn-danger">Click</button>
+
+      <!-- ex9 --> <hr>
+      <h2 class="text-danger">Click the button to show the result in console</h2>
+      <button type="button" onclick="showCon()" class="btn btn-danger">Click</button>
+
+      <!-- ex10 --> <hr>
+      <h2 class="text-danger">show the result</h2>
+      <p id="in"></p>
+
+      <!-- ex11 --> <hr>
+      <h2 class="text-danger">show the result</h2>
+      <p id="jd"></p>
+
+      <!-- ex12 --> <hr>
+      <h2 class="text-danger">show the result</h2>
+      <p id="yjd"></p>
       
-    </section>
-   </section>
+      <!-- ex13 --> <hr>
+      <h2 class="text-danger">The result of adding "5" + 2 + 3 is:</h2>
+      <p id="st"></p>
+
+      <!-- ex14 --> <hr>
+      <h2 class="text-danger">The Addition Operator (+) adds numbers</h2>
+      <p id="ao"></p>
+
+      <!-- ex15 --> <hr>
+      <h2 class="text-danger">The Multiplication Operator (*) multiplies numbers:</h2>
+      <p id="mo"></p>
+
+      <!-- ex16 --> <hr>
+      <h2 class="text-danger">Arithmetic Operators</h2>
+      <p id="j1"></p>
+
+      <!-- ex17 --> <hr>
+      <h2 class="text-danger">String Comparison</h2>
+      <p id="j2"></p>
+
+      <!-- ex18 --> <hr>
+      <h2 class="text-danger">String Addition</h2>
+      <p id="j3"></p>
+
+      <!-- ex19 --> <hr>
+      <h2 class="text-danger">Strings and Numbers</h2>
+      <p id="j4"></p>
+
+      <!-- ex20 --> <hr>
+      <h2 class="text-danger">Adding</h2>
+      <p id="j5"></p>
+
+      <!-- ex21 --> <hr>
+      <h2 class="text-danger">subtraction</h2>
+      <p id="j6"></p>
+
+<!--example24--><hr>
+<h2 class="text-danger"> border bottom</h2>
+
+<button onclick="changeBots()" type="button"class="btn btn-dark">Click</button>
+<h3 id="cbbs">Lorem ipsum dolor sit amet</h3>
+
+
+<!--example26--><hr>
+<h2 class="text-danger">border left</h2>
+<button onclick="changeBorl()" type="button"class="btn btn-dark">Click</button>
+
+<h3 id="cbbl">Lorem ipsum dolor sit amet</h3>
+
+<!--example27--><hr>
+<h2 class="text-danger">border left</h2>
+<button onclick="changeBorls()" type="button"class="btn btn-dark">Click</button>
+
+<h3 id="cbbls">Lorem ipsum dolor sit amet</h3>
+
+
+<!--example29--><hr>
+<h2 class="text-danger">right style</h2>
+<button onclick="changeBorrrs()" type="button"class="btn btn-dark">Click</button>
+
+<h3 id="cbbrrrs">Lorem ipsum dolor sit amet</h3>
+
+<!--example30-->
+<hr>
+<h2 class="text-danger">box shadow</h2>
+<button onclick="changeBoxs()" type="button"class="btn btn-dark">Click</button>
+<h3 id="cboxs">Lorem ipsum dolor sit</h3>
+
+
+<!--example35--><hr>
+
+<h2 class="text-danger">change the font-variant</h2>
+
+<p id="fv">Click</p>
+
+<button type="button" onclick="myFunctionv()">Click</button>
+
+
+<!--example36--><hr>
+
+<h2 class="text-danger">change the font-weight</h2>
+
+<p id="fw">Click</p>
+
+<button type="button" onclick="myFunctionw()">Click</button>
+
+
+
+<!--example37--><hr>
+
+<h2 class="text-danger">change the height</h2>
+
+<button type="button" id="myBtn" onclick="myFunctionb()">Click</button>
+
+
+
+<!--example38--><hr>
+
+<h2 class="text-danger">justify content</h2>
+
+<button type="button" id="myBtn" onclick="myFunctionbx()">Click</button>
+
+
+<div id="box">
+  <div style="background-color:green;"></div>
+  <div style="background-color:red;"></div>
+  <div style="background-color:yellow;"></div>
+  <div style="background-color:blue;"></div>
+</div>
+
+<!--example39--><hr>
+<h2 class="text-danger">click the button for list style</h2>
+
+<button type="button" id="myBtn" onclick="myFunctionl()">Click</button>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Water</li>
+  <li>Soda</li>
+</ul>
+
+
+
+
+<!--example40--><hr>
+<h2 class="text-danger">click the button for list style position</h2>
+
+<button type="button" id="myBtn" onclick="myFunctionlp()">Click</button>
+
+<ul id="myUL">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Water</li>
+  <li>Soda</li>
+</ul>
+
+<!--example41--><hr>
+<h2 class="text-danger">click the button for list style property</h2>
+
+<button type="button" id="myBtn" onclick="myFunctionpr()">try</button>
+
+<ul id="myULI">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Water</li>
+  <li>Soda</li>
+</ul>
+
+<!--example42--><hr>
+
+<h2 class="text-danger">click the button to set the margin</h2>
+
+<div id="mr">Hey</div>
+
+
+<button type="button" id="myBtn" onclick="myFunctionm()">Click</button>
+
+
+
+<!--example43--><hr>
+
+<h2 class="text-danger">click the button to set the margin bottom</h2>
+
+<div id="mb">Hey</div>
+
+
+<button type="button" id="myBtn" onclick="myFunctionmb()">Click</button>
+
+
+
+<!--example44--><hr>
+
+<h2 class="text-danger">click the button to set the margin left</h2>
+
+<div id="ml">Hey</div>
+
+
+<button type="button" id="myBtn" onclick="myFunctionml()">Click</button>
+
+<!--example45--><hr>
+
+<h2 class="text-danger">click the button to set the margin right</h2>
+
+<div id="mrr">Hey</div>
+
+
+<button type="button" id="myBtn" onclick="myFunctionmrr()">try</button>
+
+<!--example46--><hr>
+
+<h2 class="text-danger">click the button to set the margin top</h2>
+
+<div id="mt">hello guys</div>
+
+
+<button type="button" id="myBtn" onclick="myFunctionmt()">try</button>
+
+<!--example47--><hr>
+
+<h2 class="text-danger">click the button to set the max-height</h2>
+<button type="button" id="myBtn" onclick="myFunctionmh()">try</button>
+
+<div id="mh">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+</div>
+<!--example48--><hr>
+
+<h2 class="text-danger">click the button to change the text decoration</h2>
+
+<button type="button" id="myBtn" onclick="myFunctiontd()">try</button>
+
+<p id="td">This is a paragraph.</p>
+
+<!--example49--><hr>
+
+<h2 class="text-danger">change the text decoration color</h2>
+
+<button type="button" id="myBtn" onclick="myFunctiontdc()">try</button>
+
+<p id="tc">This is a paragraph.</p>
+
+<!--example50--><hr>
+
+<h2 class="text-danger">transform the text</h2>
+
+<button type="button" id="myBtn" onclick="myFunctiontt()">try</button>
+
+<p id="tut">This is a paragraph.</p>
+
+<!-- ----------------------------------------------------------------- -->
+<!--example22--><hr>
+<h2 class="text-danger">Dividing</h2>
+<h3 id="mpz">Lorem ipsum dolor sit amet,</h3>
+<!--example23--><hr>
+<h2 class="text-danger">remainder </h2>
+<h3 id="rj">Lorem ipsum dolor sit amet</h3>
+
+<!--example25--><hr>
+<h2 class="text-danger">border bottom</h2>
+
+<button onclick="changeBotw()" type="button"class="btn btn-dark">try</button>
+<h3 id="cbbw">Lorem ipsum dolor sit amet</h3>
+
+<!--example28--><hr>
+<h2 class="text-danger">border right</h2>
+<button onclick="changeBorr()" type="button"class="btn btn-dark">try</button>
+
+<h3 id="cbbrrr">Lorem ipsum dolor sit ame</h3>
+
+<!--example31--> <hr>
+<h2 class="text-danger">click the button to flow the text</h2>
+
+<p id="tf">hello guys.</p>
+
+<button type="button" onclick="myFlow()">Let text flow from right to left</button>
+
+<!--example32--><hr>
+
+<h2 class="text-danger">click the button for the display property</h2>
+
+<p id="dp">hello guys.</p>
+
+<button type="button" onclick="myDisplay()">try</button>
+
+<!--example33--><hr>
+
+<h2 class="text-danger">click the button to change the font-family</h2>
+
+<p id="ff">Hello guys.</p>
+
+<button type="button" onclick="myFunction()">try</button>
+
+
+<!--example34--><hr>
+
+<h2 class="text-danger">click the button to change the font-style</h2>
+
+<p id="kj">Hello guys</p>
+
+<button type="button" onclick="myFont()">Click</button>
+    </div>
+
+
+
+
+
+
+
+
     <!--js links-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
@@ -201,4 +544,4 @@
 </html>
 
 
-     
+
